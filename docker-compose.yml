@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    container_name: docker_tut-app
+    restart: always
+    ports:
+      - 4026:8080
